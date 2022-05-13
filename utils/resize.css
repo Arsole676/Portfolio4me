@@ -1,0 +1,358 @@
+/*
+primary colours
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+* .under-line {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FA4D56;
+          text-decoration-color: #FA4D56;
+  text-decoration-thickness: 5px;
+}
+
+* .fillup {
+  color: #FA4D56;
+}
+
+* .boldpara {
+  font-weight: 900;
+}
+
+* .leftmar {
+  margin-left: 15px;
+}
+
+* .size {
+  font-size: 1.5rem;
+}
+
+* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body {
+  background-color: #0f1114;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0f1114;
+  padding: 1.3rem 4rem;
+}
+
+body nav .logo {
+  margin-right: auto;
+}
+
+body nav .logo h1 {
+  font-weight: 900;
+}
+
+body nav .links a:nth-child(even) {
+  display: none;
+}
+
+body nav .links a {
+  padding-left: 1rem;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body nav .links a:hover {
+  color: #FA4D56;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 0;
+  margin-bottom: 20rem;
+}
+
+body .hero .motd {
+  padding: 3rem;
+  border-left: #FA4D56 solid 9px;
+}
+
+body .hero .motd .motd-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .hero .motd .motd-txt h1 {
+  font-size: 2.5rem;
+}
+
+body .hero .motd .motd-txt p {
+  padding-top: 1.3rem;
+  color: #FA4D56;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FA4D56;
+          text-decoration-color: #FA4D56;
+  text-decoration-thickness: 3px;
+}
+
+body .hero .motd .motd-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .hero .motd .motd-logo a i {
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  font-size: 2.2rem;
+}
+
+body .hero .motd .motd-logo a:hover i {
+  color: #FA4D56;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body .hero .outer-image .image {
+  padding: 1rem;
+}
+
+body .self-info {
+  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20rem;
+}
+
+body .self-info .about-image {
+  padding: 3rem;
+}
+
+body .self-info .about-image img {
+  width: 460px;
+  height: 680px;
+}
+
+body .self-info .about-info h1 {
+  margin-bottom: 2rem;
+}
+
+body .self-info .about-info p {
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+body .my-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .my-contact h1 {
+  margin-bottom: 4rem;
+}
+
+body .my-contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+body .my-contact form .Gmail {
+  margin-bottom: 1.8rem;
+}
+
+body .my-contact form .Gmail input {
+  background-color: #181b1f;
+  outline: none;
+  border: #FA4D56 solid 2px;
+  border-radius: 5px;
+  height: 40px;
+  padding: 15px;
+  width: 600px;
+}
+
+body .my-contact form .Message {
+  margin-bottom: 1.8rem;
+}
+
+body .my-contact form .Message textarea {
+  background-color: #181b1f;
+  outline: none;
+  border: #FA4D56 solid 2px;
+  border-radius: 5px;
+  height: 400px;
+  padding: 15px;
+  width: 600px;
+}
+
+body .my-contact form button {
+  color: #0f1114;
+  background-color: #FA4D56;
+  border: none;
+  padding: 10px;
+  width: 600px;
+  font-size: large;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+body footer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #181b1f;
+}
+
+body footer p {
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  body nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body nav .logo {
+    display: none;
+  }
+  body nav .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body nav .links a:nth-child(odd) {
+    display: none;
+  }
+  body nav .links a:nth-child(even) {
+    display: block;
+  }
+  body nav .links a {
+    margin: 0 24px;
+  }
+  body nav .links a i {
+    display: block;
+    font-size: 1.2rem;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  body nav .links a i:hover {
+    color: #FA4D56;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  body .hero .motd {
+    padding: 2rem;
+  }
+  body .hero .motd .motd-txt h1 {
+    font-size: 2.3rem;
+  }
+  body .hero .outer-image {
+    display: none;
+  }
+  body .self-info {
+    padding: 1.2rem;
+  }
+  body .self-info .about-image {
+    display: none;
+  }
+  body .my-contact {
+    padding: 1rem;
+  }
+  body .my-contact form .Gmail input {
+    width: 450px;
+  }
+  body .my-contact form .Message textarea {
+    width: 450px;
+  }
+  body .my-contact form button {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=resize.css.map */
